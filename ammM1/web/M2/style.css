@@ -1,0 +1,741 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-mar-2017, 10.37.22
+    Author     : Vale
+*/
+
+body {
+    background-color: #E2F2FA;
+    font-family: Segoe UI, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #6F6F6F;
+    font-size: 15px;
+}
+
+
+p {
+    margin: 0;
+}
+
+
+ol {
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:link, a:visited {
+    color: #1B2130;
+    font-weight: 600;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+input, textarea, button {
+    outline: none;
+}
+
+
+/* HEADER */
+header {
+    background-color: #D1EBF9; 
+    height: 80px; 
+    text-align: center; 
+    font-size: 25px; 
+    line-height: 80px; 
+    font-weight: bold; 
+    border-bottom: 1px solid #0785BD;
+    width: 18%;
+    color: #37779A;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 2;
+}
+/* HEADER */
+
+
+/* NAV */
+nav {
+    height: 80px; 
+    background-color: #D1EBF9; 
+    border-bottom: 1px solid #0785BD;
+    position: fixed; 
+    right: 0; 
+    top: 0; 
+    width: 82%;
+    z-index: 2;
+}
+
+nav ol {
+    text-align: left;
+    font-size: 18px;
+}
+
+nav ol > li {
+    display: inline-block;
+    line-height: 80px;
+    height: 80px; 
+    float: left;
+}
+
+nav ol > li a {
+    background-color: #BDD4E1; 
+    height: 80px; 
+    display: inline-block; 
+    padding: 0 20px;
+    border-right: 1px solid #0785BD;
+    font-weight: normal;
+}
+
+nav ol > li:first-child a {
+    border-left: 1px solid #0785BD;
+}
+
+nav ol > li a:link, nav ol > li a:visited {
+    color: #46809F;
+}
+
+nav ol > li a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+nav ol > li.active a {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+/* NAV */
+
+
+/* H1, H2, H3 */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 60px; 
+    margin-bottom: 46px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 25px; 
+    margin-bottom: 20px;
+}
+/* H1, H2, H3 */
+
+
+
+/* BACHECA e PROFILO */
+/* PARTE SINISTRA */
+#bodyLeft {
+    width: 13.7%; 
+    background-color: #fff; 
+    float: left;
+    margin-left: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.20);
+    border-radius: 3px;
+}
+
+#bodyLeft #lists div {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+#bodyLeft #lists ol {
+    margin-top: 5px;
+}
+
+#bodyLeft #lists ol > li {
+    font-size: 16px;
+}
+
+#bodyLeft #lists div:nth-of-type(2) {
+    margin-top: 15px;
+}
+/* PARTE SINISTRA */
+
+
+
+/* PARTE DESTRA */
+#bodyRight {
+    float: right; 
+    width: 80%;
+    margin-top: 100px;
+}
+
+
+/* Stili dei Post */
+#posts .info {
+    padding-bottom: 0;
+}
+
+#posts .post {
+    background-color: #fff; 
+    margin: 20px;
+    border-radius: 3px; 
+    padding: 20px; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+}
+
+#posts .post:first-child {
+    margin-top: 0;
+}
+
+#posts .msg {
+    text-align: justify;
+    border-top: 1px solid #CBDBE4; 
+    padding-top: 10px; 
+    margin-top: 10px;
+}
+
+#posts .msg img {
+    display: block; 
+    padding-top: 5px;
+    width: 100%;
+}
+
+#posts .post p[id] {
+    vertical-align: top;
+    font-weight: bold;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: -5px;
+}
+/* Stili dei Post */
+
+
+/* Stile Form */
+#bodyRight #form {
+    background-color: #fff; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-radius: 3px; 
+    padding: 30px; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+    position: relative;
+    z-index: 1;
+}
+
+#form input, #form textarea {
+    height: 37px; 
+    width: 180px; 
+    margin-top: 25px; 
+    padding: 3px;
+    color: #46809F;
+    background: #DAEFFA; 
+    border-radius: 3px; 
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+#form input:focus, #form textarea:focus {
+    box-shadow: 0 0 4px #46809F;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    cursor: pointer;
+    background: #709CB5; 
+    border: 1px solid #01507B; 
+    height: 28px; 
+    line-height: 28px; 
+    color: #fff; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    font-size: 16px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+button:hover {
+    background: #5B8FAA;
+}
+
+#bodyRight #form input:nth-of-type(1) {
+    margin-top: 0;
+}
+
+#bodyRight #form input:nth-of-type(4) {
+    margin-top: 21px;
+}
+
+#bodyRight #form label:nth-of-type(5) {
+    margin-top: 31px;
+}
+
+#bodyRight #form label {
+    text-align: left; 
+    float: left;  
+    width: 250px;
+    margin-top: 35px;
+    font-size: 15px;
+}
+
+#bodyRight #form label:nth-of-type(1) {
+    margin-top: 10px;
+}
+
+#bodyRight #form form { 
+    width: 440px;
+    margin-right: 18%;
+    margin-left: auto;
+}
+
+#bodyRight form::before {
+    content: "";
+    background-image: url(http://i.imgur.com/kbc9ZXG.png); 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px; 
+    left: 18%;
+    width: 200px;
+    height: 166px;
+}
+/* Stile Form */
+/* BACHECA e PROFILO */
+
+
+
+/* LOGIN e DESCRIZIONE */
+#divBody {
+    margin-top: 100px;
+}
+
+
+/* Form Pagina Login */
+#login {
+    width: 100%; 
+    border-bottom: none; 
+    height: 200px; 
+    font-size: 30px; 
+    margin-top: 40px; 
+    background: none;
+}
+
+#login #title::before {
+    content: url(http://i.imgur.com/lxv7RN4.png); 
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 20px;
+}
+
+
+#divBody #form {
+    width: 500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding: 40px 0; 
+    background-color: #fff; 
+    border-radius: 3px; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+    margin-top: 265px;
+}
+
+#divBody #form input {
+    margin-top: 10px;
+}
+
+#divBody #form form {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 300px;
+}
+
+#divBody #form form label:after, 
+#divBody #form form label:nth-of-type(2):before {
+    content: "\A";
+    white-space: pre;
+}
+
+#divBody #form input {
+    width: 290px;
+}
+/* Form Pagina Login */
+
+
+
+/* Stile Pagina Descrizione */
+#divBody #descrizione {
+    margin: 20px;
+}
+
+#divBody h2:nth-of-type(1) {
+    margin-top: 20px;
+}
+
+#divBody #descrizione p {
+    text-align: justify;
+}
+
+#divBody #descrizione {
+    background-color: #fff; 
+    border-radius: 3px; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+}
+
+#divBody #descrizione ol > li a {
+    font-size: 20px;
+}
+
+#divBody #descrizione ol {
+    border-bottom: 1px solid #CBDBE4; 
+    padding-bottom: 20px;
+}
+/* Stile Pagina Descrizione */
+/* LOGIN e DESCRIZIONE */
+
+
+/*LARGHEZZE MINORI O UGUALI A 480PX */
+@media only screen and (max-width: 480px) {
+    /* HEADER */
+    header {
+        font-size: 14px;
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+    }
+    /* HEADER */
+    
+    
+    /* H1, H2, H3 */
+    h1 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    /* H1, H2, H3 */
+    
+    
+    /* NAV */
+    nav {
+        height: 60px;
+        top: 60px;
+        left: 0;
+        border-bottom: 0;
+        width: 100%;
+        border-top: 1px solid #0785BD;
+        border-bottom: 1px solid #0785BD;
+        text-align: center;
+    }
+    
+    nav ol > li {
+        height: 60px;
+        line-height: 60px;
+        width: 25%;
+        text-align: center;
+    }
+    
+    nav ol > li:first-child a {
+        border-left: 0;
+    }
+    
+    nav ol > li:last-child a {
+        border-right: 0;
+    }
+    
+    nav ol > li a {
+        font-size: 13px;
+        padding: 0;
+        height: 60px;
+        width: 100%;
+        overflow: hidden;
+        border-right: 0;
+        box-shadow: -1px 0 0 #0785BD;
+    }
+    /* NAV */
+    
+    
+    
+    /* PROFILO e BACHECA */
+    #bodyLeft, #bodyRight {
+        float: none;
+    }
+    
+    #bodyLeft {
+        width: auto;
+        margin-right: 20px;
+        margin-top: 140px;
+    }
+    
+    
+    #bodyLeft #lists div {
+        font-size: 14px;
+    }
+    
+    #bodyLeft #lists ol li {
+        font-size: 12px;
+    }
+    
+    #bodyRight {
+        margin-top: 20px;
+        width: auto;
+    }
+    
+    
+    /* Post */
+    #bodyRight #posts .post p[id] {
+        font-size: 14px;
+        max-width: 80px;
+    }
+    
+    #bodyRight #posts .msg p {
+        font-size: 12px;
+    }
+    /* Post */
+    
+    
+    /* Form */
+    #bodyRight #form {
+        margin-right: 20px;
+        width: auto;
+    }
+    
+    #bodyRight #form form {
+        width: 100%;
+    }
+    
+    #bodyRight #form label {
+        font-size: 12px;
+        width: 174px;
+    }
+    
+    #bodyRight #form input, #bodyRight #form textarea {
+        width: 98%;
+    }
+    
+    #bodyRight form::before {
+        position: relative;
+        display: block;
+        left: 0;
+        width: 100%;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    
+    #bodyRight #form input:nth-of-type(1) {
+        margin-top: 24px;
+    }
+
+    #bodyRight #form label:nth-of-type(1) {
+        margin-top: 34px;
+    }
+    /* Form */
+    /* PROFILO e BACHECA */
+  
+    
+    /* DESCRIZIONE e LOGIN */
+    #divBody {
+        margin-top: 140px;
+    }
+    
+    #divBody #descrizione ol > li a {
+        font-size: 14px;
+    }
+    
+    #divBody #descrizione p {
+        font-size: 12px;
+    }
+    
+    
+    #divBody #form {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+    
+    #divBody #form form {
+        width: auto;
+        margin: 0;
+    }
+    
+    
+    #divBody #form label {
+        font-size: 12px;
+    }
+    
+    #divBody #form input {
+        width: 98%;
+    }
+    /* DESCRIZIONE e LOGIN */
+}
+/*LARGHEZZE MINORI O UGUALI A 480PX */
+
+
+/*LARGHEZZE COMPRESE TRA 480PX E 1024PX */
+@media only screen and (min-width: 480px)
+and (max-width: 1024px) {
+    
+    /* HEADER */
+    header {
+        font-size: 16px;
+    }
+    /* HEADER */
+    
+    /* NAV */
+    nav ol > li a {
+        font-size: 16px;
+        padding: 0 13px;
+        height: 79px;
+    }
+    /* NAV */
+    
+    
+    /* H1, H2, H3 */
+    h1 {
+        font-size: 22px;
+    }
+    
+    h2 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    /* H1, H2, H3 */
+
+    
+    /* PROFILO e BACHECA */
+    #bodyLeft #lists div {
+        font-size: 16px;
+    }
+    
+    #bodyLeft #lists ol li {
+        font-size: 14px;
+    }
+
+    #bodyLeft {
+        width: 20%;
+    }
+    
+    #bodyRight {
+        width: 66%;
+    }
+    
+    /* Post */
+    #bodyRight #posts p[id] {
+        font-size: 14px;
+    }
+    
+    #bodyRight #posts .msg p {
+        font-size: 13px;
+        
+    }
+    
+    #divBody #descrizione p {
+        font-size: 13px;
+    }
+    /* Post */
+    
+    /* Form */
+    #bodyRight form::before {
+        position: relative;
+        display: block;
+        left: 0;
+        width: 100%;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+    
+    #bodyRight #form label {
+        font-size: 13px;
+        width: 260px;
+    }
+    
+    #bodyRight #form {
+        width: auto;
+    }
+    
+    #bodyRight #form form {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #bodyRight #form input, #bodyRight #form textarea {
+        width: 98%;
+    }
+    
+    #bodyRight #form input:nth-of-type(1) {
+        margin-top: 24px;
+    }
+
+    #bodyRight #form label:nth-of-type(1) {
+        margin-top: 34px;
+    }
+    /* Form */
+    /* PROFILO e BACHECA */
+    
+    
+    /* DESCRIZIONE e LOGIN */
+    #divBody #descrizione ol > li a {
+        font-size: 16px;
+    }
+    
+    #divBody #form {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 20px;
+    }
+    /* DESCRIZIONE e LOGIN */
+}
+/*LARGHEZZE COMPRESE TRA 480PX E 1024PX */
+
+
+
+/*LARGHEZZE COMPRESE TRA 1024PX E 110PX*/
+@media only screen and (min-width: 1024px)
+and (max-width: 1100px) {
+    #bodyRight {
+        width: 80%;
+    }
+    
+    
+    #bodyRight #form form {
+        margin-right: 50px;
+    }
+    
+    
+    #bodyRight form::before {
+        left: 50px;
+    }
+    
+}
+/*LARGHEZZE COMPRESE TRA 1024PX E 110PX*/
